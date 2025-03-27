@@ -4,9 +4,9 @@
 
 ## Quick start:
 
-1. Download the reduced dbs (~600GB) first from `/beegfs/data/alphafold2_data`.
+### 1. Download the reduced dbs (~600GB) first from `/beegfs/data/alphafold2_data`.
 
-2. PyPI-based virtual enviornment
+### 1. PyPI-based virtual enviornment
 ```
 ENV_PATH=/raid/lincy/ENV/hipac
 python -m venv ${ENV_PATH}
@@ -32,12 +32,12 @@ https://github.com/openmm/pdbfixer.git
 ( cd pdbfixer; pip install . )
 ```
 
-3. Clone AlphaFold2
+### 1. Clone AlphaFold2
 ```
 git clone https://github.com/google-deepmind/alphafold.git
 ```
 
-4. Run
+### 1. Run
 ```
 . ./go_sub
 ```
