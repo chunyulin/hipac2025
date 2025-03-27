@@ -23,7 +23,7 @@ jobs:
           pip install -r requirements.txt  # if needed
 
       - name: Run the Python script
-        run: python process_submission.py
+        run: python scripts/on_submission.py
 
       - name: Upload summary as artifact
         uses: actions/upload-artifact@v4
