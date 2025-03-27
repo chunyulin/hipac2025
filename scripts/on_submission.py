@@ -1,6 +1,6 @@
 import os
 
-SUBMISSIONS_DIR = "submissions"
+SUBMISSIONS_DIR = "teams"
 SUMMARY_FILE = "summary.md"
 
 def count_lines(file_path):
