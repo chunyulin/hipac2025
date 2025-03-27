@@ -1,9 +1,6 @@
 name: Process submission
 
 on:
-  push:
-    branches:
-      - main
 
 jobs:
   process_submission:
@@ -11,7 +8,7 @@ jobs:
 
     permissions: 
       contents: write
-      
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,7 +23,7 @@ jobs:
           pip install matplotlib numpy
 
       - name: Run the Python script
-        run: python scripts/on_submission.py
+        run: python .github/submit_af2.py
 
       - name: Upload summary as artifact
         uses: actions/upload-artifact@v4
