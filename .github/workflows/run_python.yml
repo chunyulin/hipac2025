@@ -1,6 +1,7 @@
 name: Process submission
 
 on:
+  workflow_dispatch:
 
 jobs:
   process_submission:
