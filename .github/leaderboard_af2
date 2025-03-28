@@ -1,7 +1,7 @@
 import os
 
-SUBMISSIONS_DIR = "af2"
-SUMMARY_FILE = "leaderboard.md"
+SUBMISSIONS_DIR = "af2/submit"
+SUMMARY_FILE = "leaderboard_af2.md"
 
 def count_lines(file_path):
     """Returns the number of lines in a file."""

@@ -1,6 +1,6 @@
 # Application: AlphaFold2
 
-## [Leaderboard](../leaderboard.md)
+## [Leaderboard](../leaderboard_af2.md)
 
 ## Quick start example:
 
@@ -21,7 +21,7 @@ source ${ENV_PATH}/bin/activate
 
 pip install --upgrade pip setuptools
 pip install hmmer biopython absl-py dm-haiku dm-tree ml-collections pandas tensorflow-cpu flax
-pip install nvidia-cudnn-cu12 nvidia-cuda-cupti-cu12
+pip install nvidia-cuda-cupti-cu12 nvidia-cudnn-cu12 nvidia-cufft-cu12 nvidia-cusolver-cu12 nvidia-cusparse-cu12
 pip install jax==0.4.29 jaxlib==0.4.29+cuda12.cudnn91 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 
 # Non-PyPI packages
@@ -59,7 +59,7 @@ git clone https://github.com/google-deepmind/alphafold.git
     ```
 - Copy `./work` into your Alphafold2 folder, which contain all the script you need to run the competition.
 - In `./work/data/`, run `python read_casp.py` to get data file for the competition task.
-- In `./work`, run `./go_sub.sh` to generate SLURM scripts and submit.
+- In `./work`, run `./go_sub.sh --submit` to generate SLURM scripts and submit.
 
 #### 5. Submit your result:
 - Create a folder of your team in `./submit`. For example, execute `mkdir ./submit/<Your_Team_Name>` at the current folder.

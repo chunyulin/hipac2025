@@ -50,6 +50,9 @@ hostname
 nvidia-smi
 source /beegfs/shared/lincy/ENV/af2/bin/activate
 
+export TF_FORCE_UNIFIED_MEMORY=1
+export XLA_PYTHON_CLIENT_MEM_FRACTION="4.0"     ## for sequence larger than ~1000
+
 python ../../run_alphafold.py --fasta_paths=../${FASTA} --output_dir=./ --db_preset=reduced_dbs  \\
   --models_to_relax=none --use_gpu_relax=True --use_precomputed_msas --max_template_date=2023-01-01  \\
   --model_preset=monomer \\
@@ -87,6 +90,9 @@ hostname
 nvidia-smi
 source /beegfs/shared/lincy/ENV/af2/bin/activate
 
+export TF_FORCE_UNIFIED_MEMORY=1
+export XLA_PYTHON_CLIENT_MEM_FRACTION="4.0"     ## for sequence larger than ~1000
+
 python ../../run_alphafold.py --fasta_paths=../${FASTA} --output_dir=./ --db_preset=reduced_dbs \\
   --models_to_relax=none --use_gpu_relax=True --use_precomputed_msas --max_template_date=2023-01-01   \\
   --model_preset=multimer --num_multimer_predictions_per_model=1 \\
@@ -109,7 +115,15 @@ fi
 RUN_GROUP=./runs
 mkdir -p ${RUN_GROUP}
 ##FILES=`ls -1 ./data/fasta/* | shuf`
-FILES="./data/fasta/D1273_27.fasta ./data/fasta/T0245s2_134.fasta"
+FILES="\
+./data/fasta/D1273_27.fasta    \
+./data/fasta/T0245s2_134.fasta \
+./data/fasta/H1202_190.fasta   \
+./data/fasta/H0225_483.fasta   \
+./data/fasta/T2247_697.fasta   \
+./data/fasta/T1257_1263.fasta  \
+./data/fasta/T2210_1770.fasta  \
+"
 
 for f in ${FILES}; do
 
