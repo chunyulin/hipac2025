@@ -1,0 +1,291 @@
+Query         D1273 0 27 residues,|
+Match_columns 27
+No_of_seqs    1 out of 1
+Neff          1
+Searched_HMMs 80799
+Date          Wed Mar 26 10:46:09 2025
+Command       /beegfs/shared/lincy/ENV/af2/bin/hhsearch -i /tmp/tmpy1wcunwy/query.a3m -o /tmp/tmpy1wcunwy/output.hhr -maxseq 1000000 -d /beegfs/data/alphafold2_data/pdb70/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 3FHK_D UPF0403 protein yphP; d  68.0     3.9 4.8E-05   25.8   0.0   12   12-23     54-65  (147)
+  2 3FHK_F UPF0403 protein yphP; d  68.0     3.9 4.8E-05   25.8   0.0   12   12-23     54-65  (147)
+  3 2LA0_A Uncharacterized protein  64.6     5.1 6.3E-05   20.2   0.0   15    9-23      8-22  (30)
+  4 2MFP_A EC protein I/II; Metall  51.1      12 0.00015   18.7   0.0   15   11-25     16-30  (31)
+  5 3ZID_A TUBULIN/FTSZ, GTPASE; G  32.6      38 0.00047   20.6   0.0   12   14-25    110-121 (373)
+  6 2MH1_A Kalata-B1; kalata B1, s  31.8      40 0.00049   16.6   0.0    8    7-14      1-8   (33)
+  7 2VXY_A CELL DIVISION PROTEIN F  29.7      45 0.00056   20.5   0.0   13   13-25    102-114 (382)
+  8 6GRH_A Bacteriocin microcin B1  29.4      46 0.00057   18.4   0.0   14    9-22     28-41  (52)
+  9 4XCQ_A TubZ; tubulin-like, GTP  27.9      51 0.00063   19.6   0.0   12   14-25     96-107 (318)
+ 10 2MN1_A kalata B1[W23WW]; cyclo  26.4      57  0.0007   15.6   0.0    8    7-14      2-9   (30)
+ 11 2Q1Y_B Cell division protein f  26.3      57 0.00071   20.0   0.0   12   14-25    100-111 (379)
+ 12 3WGK_A Cell division protein F  26.0      58 0.00072   20.2   0.0   13   13-25    104-116 (390)
+ 13 2GJ0_A wmsa_30; Cyclotide, PLA  25.2      62 0.00076   15.6   0.0    9    6-14      2-10  (31)
+ 14 5ZUE_A Cell division protein F  21.6      80 0.00099   19.4   0.0   12   14-25    100-111 (379)
+ 15 1WVR_A Triflin; cysteine-rich   21.2      83   0.001   17.0   0.0    9    9-17    209-217 (221)
+ 16 4B45_A CELL DIVISION PROTEIN F  20.9      85  0.0011   18.9   0.0   12   14-25    101-112 (349)
+ 17 3M8K_A FtsZ/tubulin-related pr  20.8      86  0.0011   20.3   0.0   12   14-25    135-146 (428)
+ 18 2GH0_C artemin, GDNF family re  20.7      87  0.0011   15.7   0.0    6   13-18     96-101 (101)
+ 19 4EI7_A Plasmid replication pro  20.2      90  0.0011   19.0   0.0   11   14-24    119-129 (389)
+
+No 1
+>3FHK_D UPF0403 protein yphP; disulfide isomerase, Thioredoxin superfamily, CXC; HET: SO4; 2.3A {Bacillus subtilis}
+Probab=67.96  E-value=3.9  Score=25.76  Aligned_cols=12  Identities=42%  Similarity=1.055  Sum_probs=9.0  Template_Neff=3.100
+
+Q D1273            12 TTCGCAGGTGTG   23 (27)
+Q Consensus        12 ttcgcaggtgtg   23 (27)
+                      +.||||+|..--
+T Consensus        54 SVCGCAAG~ARP   65 (147)
+T 3FHK_D           54 SVCGCAAGLARP   65 (147)
+T ss_dssp             CSSHHCCCCCHH
+T ss_pred             cCCcchhHcchH
+Confidence            569999987543
+
+
+No 2
+>3FHK_F UPF0403 protein yphP; disulfide isomerase, Thioredoxin superfamily, CXC; HET: SO4; 2.3A {Bacillus subtilis}
+Probab=67.96  E-value=3.9  Score=25.76  Aligned_cols=12  Identities=42%  Similarity=1.055  Sum_probs=9.0  Template_Neff=3.100
+
+Q D1273            12 TTCGCAGGTGTG   23 (27)
+Q Consensus        12 ttcgcaggtgtg   23 (27)
+                      +.||||+|..--
+T Consensus        54 SVCGCAAG~ARP   65 (147)
+T 3FHK_F           54 SVCGCAAGLARP   65 (147)
+T ss_dssp             CSSHHCCCCCHH
+T ss_pred             cCCcchhHcchH
+Confidence            569999987543
+
+
+No 3
+>2LA0_A Uncharacterized protein; thioether bridges, helical loops, crosslinked; NMR {Bacillus cereus 95/8201}
+Probab=64.62  E-value=5.1  Score=20.16  Aligned_cols=15  Identities=53%  Similarity=1.141  Sum_probs=12.4  Template_Neff=1.000
+
+Q D1273             9 TCGTTCGCAGGTGTG   23 (27)
+Q Consensus         9 tcgttcgcaggtgtg   23 (27)
+                      .||+.|--+||.|+-
+T Consensus         8 acgtvclasggvgte   22 (30)
+T 2LA0_A            8 ACGTVCLASGGVGTE   22 (30)
+Confidence            599999888888764
+
+
+No 4
+>2MFP_A EC protein I/II; Metallothionein, Metal-thiolate cluster, Backbone cyclized; HET: CD; NMR {Triticum aestivum}
+Probab=51.15  E-value=12  Score=18.69  Aligned_cols=15  Identities=40%  Similarity=0.891  Sum_probs=7.0  Template_Neff=2.400
+
+Q D1273            11 GTTCGCAGGTGTGGA   25 (27)
+Q Consensus        11 gttcgcaggtgtgga   25 (27)
+                      |++|-|+.+-..|+|
+T Consensus        16 G~aCRC~~~~~g~~~   30 (31)
+T 2MFP_A           16 GTGCRCTSARSGGAA   30 (31)
+T ss_dssp             STTCTTSSCSSCCTT
+T ss_pred             CCceeccccCCCCCC
+Confidence            345566653333333
+
+
+No 5
+>3ZID_A TUBULIN/FTSZ, GTPASE; GTP-BINDING PROTEIN, TUBZ, PHUZ, CYTOSKELETON; HET: GDP; 2.0A {METHANOSAETA THERMOPHILA}
+Probab=32.60  E-value=38  Score=20.56  Aligned_cols=12  Identities=33%  Similarity=0.587  Sum_probs=8.5  Template_Neff=8.900
+
+Q D1273            14 CGCAGGTGTGGA   25 (27)
+Q Consensus        14 cgcaggtgtgga   25 (27)
+                      ++..||||+|.+
+T Consensus       110 ~~lGGGTGsG~~  121 (373)
+T 3ZID_A          110 TSVSGGTGSSFS  121 (373)
+T ss_dssp             EESSSSSHHHHH
+T ss_pred             EeCCCCccccHH
+Confidence            466788888754
+
+
+No 6
+>2MH1_A Kalata-B1; kalata B1, sortase A, cyclic; NMR {N/A}
+Probab=31.76  E-value=40  Score=16.58  Aligned_cols=8  Identities=63%  Similarity=1.514  Sum_probs=5.1  Template_Neff=3.700
+
+Q D1273             7 GTTCGTTC   14 (27)
+Q Consensus         7 gttcgttc   14 (27)
+                      |..||.+|
+T Consensus         1 g~~CGETC    8 (33)
+T 2MH1_A            1 GGGCGETC    8 (33)
+T ss_dssp             CCSCCCBC
+T ss_pred             CCCccCce
+Confidence            35577776
+
+
+No 7
+>2VXY_A CELL DIVISION PROTEIN FTSZ; GTP-BINDING, CELL DIVISION, NUCLEOTIDE-BINDING, FTSZ; HET: CIT; 1.7A {BACILLUS SUBTILIS}
+Probab=29.71  E-value=45  Score=20.46  Aligned_cols=13  Identities=69%  Similarity=1.114  Sum_probs=9.0  Template_Neff=8.700
+
+Q D1273            13 TCGCAGGTGTGGA   25 (27)
+Q Consensus        13 tcgcaggtgtgga   25 (27)
+                      .++..||||+|.+
+T Consensus       102 ~aglGGGTGsG~~  114 (382)
+T 2VXY_A          102 TAGMGGGTGTGAA  114 (382)
+T ss_dssp             EEESSSSHHHHHH
+T ss_pred             EeccCCCcCcchH
+Confidence            3567788888754
+
+
+No 8
+>6GRH_A Bacteriocin microcin B17, Microcin B17-processing; microcin, DNA gyrase, heterocyclization, posttranslational; HET: FMN, OTZ, EDO; 1.85A {Escherichia coli str. K-12 substr. MG1655}
+Probab=29.39  E-value=46  Score=18.41  Aligned_cols=14  Identities=21%  Similarity=0.287  Sum_probs=7.6  Template_Neff=1.600
+
+Q D1273             9 TCGTTCGCAGGTGT   22 (27)
+Q Consensus         9 tcgttcgcaggtgt   22 (27)
+                      +|..++.|.+|-|.
+T Consensus        28 s~~~~~~cG~GGGG   41 (52)
+T 6GRH_A           28 SRQSPLGVGIGGGG   41 (52)
+T ss_pred             cccCCCcCCCCCCC
+Confidence            45566666554443
+
+
+No 9
+>4XCQ_A TubZ; tubulin-like, GTPase, hydrolase; HET: GDP; 2.39A {Clostridium botulinum C phage}
+Probab=27.95  E-value=51  Score=19.57  Aligned_cols=12  Identities=50%  Similarity=0.761  Sum_probs=7.7  Template_Neff=8.900
+
+Q D1273            14 CGCAGGTGTGGA   25 (27)
+Q Consensus        14 cgcaggtgtgga   25 (27)
+                      ++.+||||+|.+
+T Consensus        96 ~slgGGTGsG~~  107 (318)
+T 4XCQ_A           96 ATMAGGTGSGIT  107 (318)
+T ss_dssp             EESSSSHHHHHH
+T ss_pred             cccccccccccH
+Confidence            456777877643
+
+
+No 10
+>2MN1_A kalata B1[W23WW]; cyclotide, UNKNOWN FUNCTION; NMR {N/A}
+Probab=26.42  E-value=57  Score=15.62  Aligned_cols=8  Identities=50%  Similarity=1.153  Sum_probs=5.2  Template_Neff=4.000
+
+Q D1273             7 GTTCGTTC   14 (27)
+Q Consensus         7 gttcgttc   14 (27)
+                      +..||.+|
+T Consensus         2 ~~~CgETC    9 (30)
+T 2MN1_A            2 LPVCGETC    9 (30)
+T ss_dssp             CCCSSCBC
+T ss_pred             CCCCcCce
+Confidence            45677776
+
+
+No 11
+>2Q1Y_B Cell division protein ftsZ; FtsZ, Cell Division, Protein, tuberculosis; HET: GSP; 2.3A {Mycobacterium tuberculosis} SCOP: c.32.1.1, d.79.2.1
+Probab=26.27  E-value=57  Score=20.02  Aligned_cols=12  Identities=75%  Similarity=1.248  Sum_probs=8.3  Template_Neff=8.700
+
+Q D1273            14 CGCAGGTGTGGA   25 (27)
+Q Consensus        14 cgcaggtgtgga   25 (27)
+                      ++..||||+|.+
+T Consensus       100 ~glGGGTGsG~~  111 (379)
+T 2Q1Y_B          100 AGEGGGTGTGGA  111 (379)
+T ss_dssp             CCSSCSHHHHHH
+T ss_pred             ecCCCccccchH
+Confidence            466788887753
+
+
+No 12
+>3WGK_A Cell division protein FtsZ; FTSZ, GTP-BINDING, TUBULIN HOMOLOG, POLYMERIZATION; HET: GDP; 2.799A {Staphylococcus aureus}
+Probab=25.97  E-value=58  Score=20.21  Aligned_cols=13  Identities=69%  Similarity=1.104  Sum_probs=8.7  Template_Neff=8.500
+
+Q D1273            13 TCGCAGGTGTGGA   25 (27)
+Q Consensus        13 tcgcaggtgtgga   25 (27)
+                      .++..||||+|.+
+T Consensus       104 ~aglGGGTGsG~~  116 (390)
+T 3WGK_A          104 TSGMGGGTGTGAA  116 (390)
+T ss_dssp             EEETTSSHHHHHH
+T ss_pred             EecCCCCchhcHH
+Confidence            3566788887753
+
+
+No 13
+>2GJ0_A wmsa_30; Cyclotide, PLANT PROTEIN; NMR {Viola odorata}
+Probab=25.21  E-value=62  Score=15.59  Aligned_cols=9  Identities=33%  Similarity=1.021  Sum_probs=6.0  Template_Neff=4.000
+
+Q D1273             6 GGTTCGTTC   14 (27)
+Q Consensus         6 ggttcgttc   14 (27)
+                      |+..||.+|
+T Consensus         2 g~~~CGETC   10 (31)
+T 2GJ0_A            2 SIPACGESC   10 (31)
+T ss_dssp             CBHHHCBCC
+T ss_pred             CCCCCcCce
+Confidence            455678777
+
+
+No 14
+>5ZUE_A Cell division protein FtsZ; FtsZ, GTPase, Bacterial cell division; HET: GTP; 2.7A {Mycobacterium tuberculosis H37Rv}
+Probab=21.64  E-value=80  Score=19.40  Aligned_cols=12  Identities=75%  Similarity=1.248  Sum_probs=8.0  Template_Neff=8.700
+
+Q D1273            14 CGCAGGTGTGGA   25 (27)
+Q Consensus        14 cgcaggtgtgga   25 (27)
+                      .+.+||||+|.+
+T Consensus       100 a~lGGGTGsG~~  111 (379)
+T 5ZUE_A          100 AGEGGGTGTGGA  111 (379)
+T ss_dssp             EETTSSHHHHHH
+T ss_pred             ecCCCccccchH
+Confidence            456788887753
+
+
+No 15
+>1WVR_A Triflin; cysteine-rich secretory protein, TOXIN; 2.4A {Trimeresurus flavoviridis}
+Probab=21.23  E-value=83  Score=17.03  Aligned_cols=9  Identities=33%  Similarity=1.099  Sum_probs=6.4  Template_Neff=9.800
+
+Q D1273             9 TCGTTCGCA   17 (27)
+Q Consensus         9 tcgttcgca   17 (27)
+                      -|+.+|.|.
+T Consensus       209 ~~~~~~~~~  217 (221)
+T 1WVR_A          209 KCPASCFCQ  217 (221)
+T ss_dssp             HCHHHHHCT
+T ss_pred             hCcccccCC
+Confidence            477778774
+
+
+No 16
+>4B45_A CELL DIVISION PROTEIN FTSZ; STRUCTURAL PROTEIN, TUBULIN, ARCHAEA, CYTOSKELETON; HET: GSP; 2.1A {HALOFERAX VOLCANII}
+Probab=20.90  E-value=85  Score=18.92  Aligned_cols=12  Identities=58%  Similarity=1.235  Sum_probs=7.7  Template_Neff=8.900
+
+Q D1273            14 CGCAGGTGTGGA   25 (27)
+Q Consensus        14 cgcaggtgtgga   25 (27)
+                      .+..||||+|.+
+T Consensus       101 ~~lgGgTGsg~~  112 (349)
+T 4B45_A          101 AGLGGGSGSGGA  112 (349)
+T ss_dssp             EETTSSHHHHHH
+T ss_pred             ecCCCCccccHH
+Confidence            456677877653
+
+
+No 17
+>3M8K_A FtsZ/tubulin-related protein; tubulin-like protein, plasmid segregation, GTP-binding; 2.3A {Bacillus thuringiensis}
+Probab=20.84  E-value=86  Score=20.28  Aligned_cols=12  Identities=50%  Similarity=0.875  Sum_probs=8.3  Template_Neff=7.800
+
+Q D1273            14 CGCAGGTGTGGA   25 (27)
+Q Consensus        14 cgcaggtgtgga   25 (27)
+                      .+.+||||+|.+
+T Consensus       135 ~sLGGGTGSG~~  146 (428)
+T 3M8K_A          135 LGAGGGVGTGWG  146 (428)
+T ss_dssp             EESSSHHHHHHH
+T ss_pred             eeCCCCccccHH
+Confidence            466788887753
+
+
+No 18
+>2GH0_C artemin, GDNF family receptor alpha-3; cystine-knot, helix bundle, HORMONE-GROWTH FACTOR; HET: BMA, NAG, MAN; 1.92A {Homo sapiens}
+Probab=20.69  E-value=87  Score=15.68  Aligned_cols=6  Identities=67%  Similarity=1.974  Sum_probs=3.3  Template_Neff=8.600
+
+Q D1273            13 TCGCAG   18 (27)
+Q Consensus        13 tcgcag   18 (27)
+                      .|||.+
+T Consensus        96 ~CgC~~  101 (101)
+T 2GH0_C           96 ACGCLG  101 (101)
+T ss_pred             cccccC
+Confidence            466653
+
+
+No 19
+>4EI7_A Plasmid replication protein RepX; GTP Hydrolase, plasmid segregation, REPLICATION; HET: GDP; 1.9A {Bacillus cereus}
+Probab=20.17  E-value=90  Score=19.04  Aligned_cols=11  Identities=73%  Similarity=1.482  Sum_probs=7.4  Template_Neff=9.000
+
+Q D1273            14 CGCAGGTGTGG   24 (27)
+Q Consensus        14 cgcaggtgtgg   24 (27)
+                      ++..||||+|.
+T Consensus       119 ~slgGGTGsG~  129 (389)
+T 4EI7_A          119 CGLGGGTGTGA  129 (389)
+T ss_dssp             EETTSSHHHHH
+T ss_pred             eeCCccchhcH
+Confidence            45677887764
+
+

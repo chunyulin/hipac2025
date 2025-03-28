@@ -1,6 +1,6 @@
 # Application: AlphaFold2
 
-## Leader board: See ...
+## [Leaderboard](../leaderboard.md)
 
 ## Quick start example:
 
@@ -44,13 +44,33 @@ https://github.com/openmm/pdbfixer.git
 git clone https://github.com/google-deepmind/alphafold.git
 ```
 
-#### 4. Generate SLURM submit script and submit it
-```
-. ./go_sub
-```
+#### 4. Steps to run the competiton task
+- Firstly, fork the [repository you are looking now](https://github.com/chunyulin/hipac2025.git) from the browser or use github CLI.
+    - You can fork from the browser, which might be easier.
+    - Or use github CLI with a classic personal token:
+    ```
+    gh auth login
+    gh gh repo fork chunyulin/hipac2025 --clone
+    ```
+- Then, swicth to another branch for your team, to which your result will be submit.
+    ```
+    cd hipac2025
+    git checkout -b <your_branch_name>
+    ```
+- Copy `./work` into your Alphafold2 folder, which contain all the script you need to run the competition.
+- In `./work/data/`, run `python read_casp.py` to get data file for the competition task.
+- In `./work`, run `./go_sub.sh` to generate SLURM scripts and submit.
 
-## Submit your result:
-- Please commit to the repo and make a PR ....
+#### 5. Submit your result:
+- Create a folder of your team in `./submit`. For example, execute `mkdir ./submit/<Your_Team_Name>` at the current folder.
+- Copy all results in `./work/runs` to your team folder just created, which include the timing as the main metric for the competition. See the `./submit/Team_Baseline` for the example folder structure.
+- Commit to the repo and make a PR (Pull request). For example:
+    ```
+    git add .
+    git commit     ## check update file list, give a short description, and save.
+    git push myfork <your_branch_name>
+    ```
+- Now, go to your github on a browser. GitHub will suggest creating a PR. Just click "Compare & pull request", and wait for the organizer review.
 
 ## Some tips:
-- AlphaFold spend most of the time to find the homology information and save it in `./msas` for each sequence. To save your testing time, use `--use_precomputed_msas` to reuse the file. But we require the submit runs include the searching time. 
+- AlphaFold spend most of the time to find the homology information and save in `./msas` for each sequence. To save the testing time, use `--use_precomputed_msas` to reuse it. But we require the final submission include the searching time.
