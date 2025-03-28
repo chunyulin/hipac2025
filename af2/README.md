@@ -2,11 +2,18 @@
 
 ## Leader board: See ...
 
-## Quick start:
+## Quick start example:
 
-### 1. Download the reduced dbs (~600GB) first from `/beegfs/data/alphafold2_data`.
+#### 1. Download the reduced dbs (~600GB) first:
+You can download from the AF2 repo or local host provided by the organizor as below
+```
+mkdir /data/alphafold2_reduced_dbs
+cd /data/alphafold2_reduced_dbs
+scp xxx.xxx.xxx:/beegfs/data/af2_reduced.tgz ./
+tar zxvf af2_reduced.tgz
+```
 
-### 1. PyPI-based virtual enviornment
+#### 2. PyPI-based virtual enviornment
 ```
 ENV_PATH=/raid/lincy/ENV/hipac
 python -m venv ${ENV_PATH}
@@ -32,15 +39,18 @@ https://github.com/openmm/pdbfixer.git
 ( cd pdbfixer; pip install . )
 ```
 
-### 1. Clone AlphaFold2
+#### 3. Checkout AlphaFold2 repo
 ```
 git clone https://github.com/google-deepmind/alphafold.git
 ```
 
-### 1. Run
+#### 4. Generate SLURM submit script and submit it
 ```
 . ./go_sub
 ```
 
 ## Submit your result:
-- Commit to ....
+- Please commit to the repo and make a PR ....
+
+## Some tips:
+- AlphaFold spend most of the time to find the homology information and save it in `./msas` for each sequence. To save your testing time, use `--use_precomputed_msas` to reuse the file. But we require the submit runs include the searching time. 
