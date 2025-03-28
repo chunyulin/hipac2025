@@ -1,5 +1,7 @@
 # Submission Summary
 
-## team01
-- `result.log`: 4 lines
+## submit
+
+## work
+- `go_sub.sh`: 125 lines
 
