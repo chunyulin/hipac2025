@@ -68,7 +68,7 @@ git clone https://github.com/google-deepmind/alphafold.git
     ```
     git add .
     git commit     ## check update file list, give a short description, and save.
-    git push myfork <your_branch_name>
+    git push --set-upstream origin <your_branch_name>
     ```
 - Now, go to your github on a browser. GitHub will suggest creating a PR. Just click "Compare & pull request", and wait for the organizer review.
 
