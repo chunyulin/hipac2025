@@ -1,0 +1,91 @@
+DGX106
+Wed Mar 26 17:12:49 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.183.01             Driver Version: 535.183.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-SXM2-16GB           On  | 00000000:89:00.0 Off |                    0 |
+| N/A   48C    P0              74W / 300W |      0MiB / 16384MiB |    100%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2-16GB           On  | 00000000:8A:00.0 Off |                    0 |
+| N/A   39C    P0              61W / 300W |      0MiB / 16384MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+I0326 17:13:03.382524 22942225188672 templates.py:858] Using precomputed obsolete pdbs /beegfs/data/alphafold2_data/pdb_mmcif/obsolete.dat.
+I0326 17:13:04.332466 22942225188672 xla_bridge.py:900] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA
+I0326 17:13:04.334259 22942225188672 xla_bridge.py:900] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I0326 17:13:08.869128 22942225188672 run_alphafold.py:524] Have 5 models: ['model_1_pred_0', 'model_2_pred_0', 'model_3_pred_0', 'model_4_pred_0', 'model_5_pred_0']
+I0326 17:13:08.869506 22942225188672 run_alphafold.py:538] Using random seed 738679614738515271 for the data pipeline
+I0326 17:13:08.870168 22942225188672 run_alphafold.py:245] Predicting T0245s2
+I0326 17:13:08.890850 22942225188672 jackhmmer.py:133] Launching subprocess "/beegfs/shared/lincy/ENV/af2/bin/jackhmmer -o /dev/null -A /tmp/tmp465dqfre/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --incE 0.0001 -E 0.0001 --cpu 8 -N 1 .././data/fasta50/T0245s2.fasta /beegfs/data/alphafold2_data/uniref90/uniref90.fasta"
+I0326 17:13:08.893187 22942225188672 utils.py:36] Started Jackhmmer (uniref90.fasta) query
+I0326 17:21:55.288061 22942225188672 utils.py:40] Finished Jackhmmer (uniref90.fasta) query in 526.395 seconds
+I0326 17:21:55.313316 22942225188672 jackhmmer.py:133] Launching subprocess "/beegfs/shared/lincy/ENV/af2/bin/jackhmmer -o /dev/null -A /tmp/tmpmw9m0k47/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --incE 0.0001 -E 0.0001 --cpu 8 -N 1 .././data/fasta50/T0245s2.fasta /beegfs/data/alphafold2_data/mgnify/mgy_clusters_2022_05.fa"
+I0326 17:21:55.315548 22942225188672 utils.py:36] Started Jackhmmer (mgy_clusters_2022_05.fa) query
+I0326 17:33:22.841889 22942225188672 utils.py:40] Finished Jackhmmer (mgy_clusters_2022_05.fa) query in 687.526 seconds
+I0326 17:33:22.846904 22942225188672 hhsearch.py:85] Launching subprocess "/beegfs/shared/lincy/ENV/af2/bin/hhsearch -i /tmp/tmp7i4tcu8d/query.a3m -o /tmp/tmp7i4tcu8d/output.hhr -maxseq 1000000 -d /beegfs/data/alphafold2_data/pdb70/pdb70"
+I0326 17:33:22.849494 22942225188672 utils.py:36] Started HHsearch query
+I0326 17:33:45.203793 22942225188672 utils.py:40] Finished HHsearch query in 22.354 seconds
+I0326 17:33:45.211179 22942225188672 jackhmmer.py:133] Launching subprocess "/beegfs/shared/lincy/ENV/af2/bin/jackhmmer -o /dev/null -A /tmp/tmp9q2rh8r5/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --incE 0.0001 -E 0.0001 --cpu 8 -N 1 .././data/fasta50/T0245s2.fasta /beegfs/data/alphafold2_data/small_bfd/bfd-first_non_consensus_sequences.fasta"
+I0326 17:33:45.213520 22942225188672 utils.py:36] Started Jackhmmer (bfd-first_non_consensus_sequences.fasta) query
+I0326 17:35:09.356051 22942225188672 utils.py:40] Finished Jackhmmer (bfd-first_non_consensus_sequences.fasta) query in 84.142 seconds
+I0326 17:35:09.360985 22942225188672 templates.py:879] Searching for template for: MPTHSAHQPQRPLAAHQMRPPVLIDPGEFEPNAFRATEATPITMVEINDTLQLYLYHGEFQYGGEKTRIRLARLCRSADGFPFEPAENDVNQWNEIRDTLWSLGARYGYDTTIVLAWTVADVGIRCLMLARPRS
+I0326 17:35:13.223304 22942225188672 templates.py:267] Found an exact template match 6jlu_q.
+I0326 17:35:13.574970 22942225188672 templates.py:267] Found an exact template match 1x6v_A.
+I0326 17:35:13.915580 22942225188672 templates.py:267] Found an exact template match 1xjq_B.
+I0326 17:35:14.159677 22942225188672 templates.py:267] Found an exact template match 2qjf_B.
+I0326 17:35:22.150372 22942225188672 templates.py:267] Found an exact template match 5mrc_U.
+I0326 17:35:24.171982 22942225188672 templates.py:267] Found an exact template match 2lr6_A.
+I0326 17:35:24.286139 22942225188672 templates.py:267] Found an exact template match 3soo_B.
+I0326 17:35:24.329647 22942225188672 templates.py:267] Found an exact template match 1bxy_A.
+I0326 17:35:29.738294 22942225188672 templates.py:267] Found an exact template match 4v4i_X.
+I0326 17:35:42.187698 22942225188672 templates.py:267] Found an exact template match 4wzd_H5.
+I0326 17:35:47.593747 22942225188672 templates.py:267] Found an exact template match 5hl7_W.
+I0326 17:35:53.752347 22942225188672 templates.py:267] Found an exact template match 6q9a_Z.
+I0326 17:35:56.423604 22942225188672 templates.py:267] Found an exact template match 4ioa_W.
+I0326 17:36:00.597819 22942225188672 templates.py:267] Found an exact template match 5dm6_W.
+I0326 17:36:05.187254 22942225188672 templates.py:267] Found an exact template match 5jvg_W.
+I0326 17:36:05.656475 22942225188672 templates.py:267] Found an exact template match 2gag_D.
+I0326 17:36:05.807779 22942225188672 templates.py:267] Found an exact template match 4fqe_A.
+I0326 17:36:05.906680 22942225188672 templates.py:267] Found an exact template match 4pr7_A.
+I0326 17:36:05.913061 22942225188672 pipeline.py:234] Uniref90 MSA size: 3 sequences.
+I0326 17:36:05.913127 22942225188672 pipeline.py:235] BFD MSA size: 1 sequences.
+I0326 17:36:05.913171 22942225188672 pipeline.py:236] MGnify MSA size: 1 sequences.
+I0326 17:36:05.913227 22942225188672 pipeline.py:237] Final (deduplicated) MSA size: 3 sequences.
+I0326 17:36:05.913414 22942225188672 pipeline.py:239] Total number of templates (NB: this can include bad templates and is later filtered to top 4): 18.
+I0326 17:36:05.928817 22942225188672 run_alphafold.py:276] Running model model_1_pred_0 on T0245s2
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1742981767.881774 2292329 mlir_graph_optimization_pass.cc:425] MLIR V1 optimization pass is not enabled
+I0326 17:36:08.261500 22942225188672 model.py:165] Running predict with shape(feat) = {'aatype': (4, 134), 'residue_index': (4, 134), 'seq_length': (4,), 'template_aatype': (4, 4, 134), 'template_all_atom_masks': (4, 4, 134, 37), 'template_all_atom_positions': (4, 4, 134, 37, 3), 'template_sum_probs': (4, 4, 1), 'is_distillation': (4,), 'seq_mask': (4, 134), 'msa_mask': (4, 508, 134), 'msa_row_mask': (4, 508), 'random_crop_to_size_seed': (4, 2), 'template_mask': (4, 4), 'template_pseudo_beta': (4, 4, 134, 3), 'template_pseudo_beta_mask': (4, 4, 134), 'atom14_atom_exists': (4, 134, 14), 'residx_atom14_to_atom37': (4, 134, 14), 'residx_atom37_to_atom14': (4, 134, 37), 'atom37_atom_exists': (4, 134, 37), 'extra_msa': (4, 5120, 134), 'extra_msa_mask': (4, 5120, 134), 'extra_msa_row_mask': (4, 5120), 'bert_mask': (4, 508, 134), 'true_msa': (4, 508, 134), 'extra_has_deletion': (4, 5120, 134), 'extra_deletion_value': (4, 5120, 134), 'msa_feat': (4, 508, 134, 49), 'target_feat': (4, 134, 22)}
+I0326 17:37:29.331015 22942225188672 model.py:175] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (134, 134, 64)}, 'experimentally_resolved': {'logits': (134, 37)}, 'masked_msa': {'logits': (508, 134, 23)}, 'predicted_lddt': {'logits': (134, 50)}, 'structure_module': {'final_atom_mask': (134, 37), 'final_atom_positions': (134, 37, 3)}, 'plddt': (134,), 'ranking_confidence': ()}
+I0326 17:37:29.331359 22942225188672 run_alphafold.py:288] Total JAX model model_1_pred_0 on T0245s2 predict time (includes compilation time, see --benchmark): 81.1s
+I0326 17:37:29.467631 22942225188672 run_alphafold.py:276] Running model model_2_pred_0 on T0245s2
+I0326 17:37:30.978918 22942225188672 model.py:165] Running predict with shape(feat) = {'aatype': (4, 134), 'residue_index': (4, 134), 'seq_length': (4,), 'template_aatype': (4, 4, 134), 'template_all_atom_masks': (4, 4, 134, 37), 'template_all_atom_positions': (4, 4, 134, 37, 3), 'template_sum_probs': (4, 4, 1), 'is_distillation': (4,), 'seq_mask': (4, 134), 'msa_mask': (4, 508, 134), 'msa_row_mask': (4, 508), 'random_crop_to_size_seed': (4, 2), 'template_mask': (4, 4), 'template_pseudo_beta': (4, 4, 134, 3), 'template_pseudo_beta_mask': (4, 4, 134), 'atom14_atom_exists': (4, 134, 14), 'residx_atom14_to_atom37': (4, 134, 14), 'residx_atom37_to_atom14': (4, 134, 37), 'atom37_atom_exists': (4, 134, 37), 'extra_msa': (4, 1024, 134), 'extra_msa_mask': (4, 1024, 134), 'extra_msa_row_mask': (4, 1024), 'bert_mask': (4, 508, 134), 'true_msa': (4, 508, 134), 'extra_has_deletion': (4, 1024, 134), 'extra_deletion_value': (4, 1024, 134), 'msa_feat': (4, 508, 134, 49), 'target_feat': (4, 134, 22)}
+I0326 17:38:47.507175 22942225188672 model.py:175] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (134, 134, 64)}, 'experimentally_resolved': {'logits': (134, 37)}, 'masked_msa': {'logits': (508, 134, 23)}, 'predicted_lddt': {'logits': (134, 50)}, 'structure_module': {'final_atom_mask': (134, 37), 'final_atom_positions': (134, 37, 3)}, 'plddt': (134,), 'ranking_confidence': ()}
+I0326 17:38:47.507558 22942225188672 run_alphafold.py:288] Total JAX model model_2_pred_0 on T0245s2 predict time (includes compilation time, see --benchmark): 76.5s
+I0326 17:38:47.646344 22942225188672 run_alphafold.py:276] Running model model_3_pred_0 on T0245s2
+I0326 17:38:48.794452 22942225188672 model.py:165] Running predict with shape(feat) = {'aatype': (4, 134), 'residue_index': (4, 134), 'seq_length': (4,), 'is_distillation': (4,), 'seq_mask': (4, 134), 'msa_mask': (4, 512, 134), 'msa_row_mask': (4, 512), 'random_crop_to_size_seed': (4, 2), 'atom14_atom_exists': (4, 134, 14), 'residx_atom14_to_atom37': (4, 134, 14), 'residx_atom37_to_atom14': (4, 134, 37), 'atom37_atom_exists': (4, 134, 37), 'extra_msa': (4, 5120, 134), 'extra_msa_mask': (4, 5120, 134), 'extra_msa_row_mask': (4, 5120), 'bert_mask': (4, 512, 134), 'true_msa': (4, 512, 134), 'extra_has_deletion': (4, 5120, 134), 'extra_deletion_value': (4, 5120, 134), 'msa_feat': (4, 512, 134, 49), 'target_feat': (4, 134, 22)}
+I0326 17:39:47.306272 22942225188672 model.py:175] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (134, 134, 64)}, 'experimentally_resolved': {'logits': (134, 37)}, 'masked_msa': {'logits': (512, 134, 23)}, 'predicted_lddt': {'logits': (134, 50)}, 'structure_module': {'final_atom_mask': (134, 37), 'final_atom_positions': (134, 37, 3)}, 'plddt': (134,), 'ranking_confidence': ()}
+I0326 17:39:47.306641 22942225188672 run_alphafold.py:288] Total JAX model model_3_pred_0 on T0245s2 predict time (includes compilation time, see --benchmark): 58.5s
+I0326 17:39:47.417953 22942225188672 run_alphafold.py:276] Running model model_4_pred_0 on T0245s2
+I0326 17:39:48.640136 22942225188672 model.py:165] Running predict with shape(feat) = {'aatype': (4, 134), 'residue_index': (4, 134), 'seq_length': (4,), 'is_distillation': (4,), 'seq_mask': (4, 134), 'msa_mask': (4, 512, 134), 'msa_row_mask': (4, 512), 'random_crop_to_size_seed': (4, 2), 'atom14_atom_exists': (4, 134, 14), 'residx_atom14_to_atom37': (4, 134, 14), 'residx_atom37_to_atom14': (4, 134, 37), 'atom37_atom_exists': (4, 134, 37), 'extra_msa': (4, 5120, 134), 'extra_msa_mask': (4, 5120, 134), 'extra_msa_row_mask': (4, 5120), 'bert_mask': (4, 512, 134), 'true_msa': (4, 512, 134), 'extra_has_deletion': (4, 5120, 134), 'extra_deletion_value': (4, 5120, 134), 'msa_feat': (4, 512, 134, 49), 'target_feat': (4, 134, 22)}
+I0326 17:40:45.900204 22942225188672 model.py:175] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (134, 134, 64)}, 'experimentally_resolved': {'logits': (134, 37)}, 'masked_msa': {'logits': (512, 134, 23)}, 'predicted_lddt': {'logits': (134, 50)}, 'structure_module': {'final_atom_mask': (134, 37), 'final_atom_positions': (134, 37, 3)}, 'plddt': (134,), 'ranking_confidence': ()}
+I0326 17:40:45.900599 22942225188672 run_alphafold.py:288] Total JAX model model_4_pred_0 on T0245s2 predict time (includes compilation time, see --benchmark): 57.3s
+I0326 17:40:46.025902 22942225188672 run_alphafold.py:276] Running model model_5_pred_0 on T0245s2
+I0326 17:40:47.161088 22942225188672 model.py:165] Running predict with shape(feat) = {'aatype': (4, 134), 'residue_index': (4, 134), 'seq_length': (4,), 'is_distillation': (4,), 'seq_mask': (4, 134), 'msa_mask': (4, 512, 134), 'msa_row_mask': (4, 512), 'random_crop_to_size_seed': (4, 2), 'atom14_atom_exists': (4, 134, 14), 'residx_atom14_to_atom37': (4, 134, 14), 'residx_atom37_to_atom14': (4, 134, 37), 'atom37_atom_exists': (4, 134, 37), 'extra_msa': (4, 1024, 134), 'extra_msa_mask': (4, 1024, 134), 'extra_msa_row_mask': (4, 1024), 'bert_mask': (4, 512, 134), 'true_msa': (4, 512, 134), 'extra_has_deletion': (4, 1024, 134), 'extra_deletion_value': (4, 1024, 134), 'msa_feat': (4, 512, 134, 49), 'target_feat': (4, 134, 22)}
+I0326 17:41:40.245601 22942225188672 model.py:175] Output shape was {'distogram': {'bin_edges': (63,), 'logits': (134, 134, 64)}, 'experimentally_resolved': {'logits': (134, 37)}, 'masked_msa': {'logits': (512, 134, 23)}, 'predicted_lddt': {'logits': (134, 50)}, 'structure_module': {'final_atom_mask': (134, 37), 'final_atom_positions': (134, 37, 3)}, 'plddt': (134,), 'ranking_confidence': ()}
+I0326 17:41:40.245994 22942225188672 run_alphafold.py:288] Total JAX model model_5_pred_0 on T0245s2 predict time (includes compilation time, see --benchmark): 53.1s
+I0326 17:41:40.669116 22942225188672 run_alphafold.py:414] Final timings for T0245s2: {'features': 1377.035551071167, 'process_features_model_1_pred_0': 2.3322606086730957, 'predict_and_compile_model_1_pred_0': 81.07019877433777, 'process_features_model_2_pred_0': 1.511070966720581, 'predict_and_compile_model_2_pred_0': 76.52872610092163, 'process_features_model_3_pred_0': 1.147839069366455, 'predict_and_compile_model_3_pred_0': 58.51226615905762, 'process_features_model_4_pred_0': 1.2219164371490479, 'predict_and_compile_model_4_pred_0': 57.260542154312134, 'process_features_model_5_pred_0': 1.1350045204162598, 'predict_and_compile_model_5_pred_0': 53.084975242614746}
+Done in 1741 secs ...

@@ -1,0 +1,300 @@
+Query         T0245s2 FUNcomplex, C. elegans, subunit 2, 134 residues|
+Match_columns 134
+No_of_seqs    3 out of 3
+Neff          1.63693
+Searched_HMMs 80799
+Date          Wed Mar 26 17:33:44 2025
+Command       /beegfs/shared/lincy/ENV/af2/bin/hhsearch -i /tmp/tmp7i4tcu8d/query.a3m -o /tmp/tmp7i4tcu8d/output.hhr -maxseq 1000000 -d /beegfs/data/alphafold2_data/pdb70/pdb70 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5HL7_W 50S ribosomal protein L  34.4      34 0.00042   22.1   0.0   28   95-123    18-45  (59)
+  2 6Q9A_Z Nascent peptide, 50S ri  34.2      34 0.00042   22.1   0.0   28   95-123    17-44  (56)
+  3 2LR6_A LINE-1 type transposase  33.3      36 0.00045   24.4   0.0   31   89-119    23-53  (88)
+  4 3SOO_B LINE-1 type transposase  33.3      36 0.00045   24.4   0.0   31   89-119    23-53  (88)
+  5 5MRC_U 54S ribosomal protein R  26.6      56 0.00069   23.3   0.0   38   74-123     7-44  (82)
+  6 2GAG_D heterotetrameric sarcos  23.2      71 0.00088   24.7   0.0   28   57-95     14-41  (99)
+  7 1BXY_A PROTEIN (RIBOSOMAL PROT  22.9      73  0.0009   21.0   0.0   29   95-124    18-46  (60)
+  8 4V4I_X Ribosome; RIBOSOME, FUN  22.9      73  0.0009   21.0   0.0   29   95-124    18-46  (60)
+  9 4WZD_H5 30S ribosomal protein   22.9      73  0.0009   21.0   0.0   29   95-124    18-46  (60)
+ 10 4FQE_A Oligogalacturonate-spec  22.1      77 0.00096   25.3   0.0   15   99-113   103-117 (222)
+ 11 4PR7_A Oligogalacturonate-spec  22.1      77 0.00096   25.3   0.0   15   99-113   103-117 (222)
+ 12 6JLU_q PsbA, PsbB, PsbC, PsbD,  22.0      78 0.00097   26.6   0.0   57   56-112   100-159 (211)
+ 13 2QJF_B Bifunctional 3'-phospho  22.0      78 0.00097   27.6   0.0   51   19-70     86-166 (405)
+ 14 4IOA_W 50S ribosomal subunit;   20.8      85  0.0011   20.3   0.0   28   95-123    15-42  (55)
+ 15 5DM6_W 50S ribosomal protein L  20.8      85  0.0011   20.3   0.0   28   95-123    15-42  (55)
+ 16 5JVG_W 50S ribosomal protein L  20.8      85  0.0011   20.3   0.0   28   95-123    15-42  (55)
+ 17 1X6V_A Bifunctional 3'-phospho  20.2      90  0.0011   28.2   0.0   51   19-70    305-385 (630)
+ 18 1XJQ_B Bifunctional 3'-phospho  20.2      90  0.0011   28.2   0.0   51   19-70    305-385 (630)
+
+No 1
+>5HL7_W 50S ribosomal protein L2, 50S; ribosome, lefamulin, RNA, antibiotic; HET: MPD, MG, MN, 62B, SPD, EPE; 3.55A {Staphylococcus aureus subsp. aureus NCTC 8325}
+Probab=34.44  E-value=34  Score=22.13  Aligned_cols=28  Identities=25%  Similarity=0.204  Sum_probs=22.0  Template_Neff=7.400
+
+Q T0245s2          95 EIRDTLWSLGARYGYDTTIVLAWTVADVG  123 (134)
+Q Consensus        95 eirdtlwslg~r~~y~~~~vl~~~~a~~g  123 (134)
+                      +++++|..||++-.+...++ +-|-+..|
+T Consensus        18 ~~~~~L~~LgL~k~~~~v~v-~~t~~~~g   45 (59)
+T 5HL7_W           18 TQRKTVEALGLKKTNSSVVV-EDNPAIRG   45 (59)
+T ss_pred             HHHHHHHHcCCCCCCCeEEE-CCCHHHHH
+Confidence            57999999999998877665 55666665
+
+
+No 2
+>6Q9A_Z Nascent peptide, 50S ribosomal protein; tmRNA SmpB trans-translation translation, RIBOSOME; HET: OMU, OMC, 6MZ, G7M, MG, 3TD, 7MG, MA6, 2MG, 1MG, 5MU, 5MC, 2MA, OMG, 4OC, 0TD, UR3, PSU; 3.7A {Escherichia coli}
+Probab=34.20  E-value=34  Score=22.12  Aligned_cols=28  Identities=32%  Similarity=0.099  Sum_probs=21.8  Template_Neff=7.100
+
+Q T0245s2          95 EIRDTLWSLGARYGYDTTIVLAWTVADVG  123 (134)
+Q Consensus        95 eirdtlwslg~r~~y~~~~vl~~~~a~~g  123 (134)
+                      ++++||.+||++-.+...+ ++.|-+.+|
+T Consensus        17 ~~~~~L~~LgL~k~~~~v~-~~~~p~~~g   44 (56)
+T 6Q9A_Z           17 KHKATLLGLGLRRIGHTVE-REDTPAIRG   44 (56)
+T ss_pred             HHHHHHHHcCCCcCCCeEE-eCCCHHHHH
+Confidence            5799999999998887766 566666555
+
+
+No 3
+>2LR6_A LINE-1 type transposase domain-containing protein; L1TD1, Partnership for Stem Cell; NMR {Homo sapiens}
+Probab=33.32  E-value=36  Score=24.36  Aligned_cols=31  Identities=16%  Similarity=0.236  Sum_probs=26.2  Template_Neff=6.500
+
+Q T0245s2          89 DVNQWNEIRDTLWSLGARYGYDTTIVLAWTV  119 (134)
+Q Consensus        89 d~~~w~eirdtlwslg~r~~y~~~~vl~~~~  119 (134)
+                      .-..|++|+..|...|++|+.-+|..|-.+.
+T Consensus        23 kRr~f~~v~k~Lr~~~i~~~~~yPa~L~v~~   53 (88)
+T 2LR6_A           23 ISKQWSNVFNILRENDFEPKFLCEVKLAFKC   53 (88)
+T ss_dssp             CCCCCSCCSHHHHHTTCCCCCCSCCCEEEEE
+T ss_pred             HHHHHHHHHHHHHHCCCCCcccCceEEEEEE
+Confidence            3467999999999999999988888887664
+
+
+No 4
+>3SOO_B LINE-1 type transposase domain-containing protein; Alpha/beta protein, Structural Genomics, Joint; HET: MLY, SO4, MSE; 2.73A {Homo sapiens}
+Probab=33.32  E-value=36  Score=24.36  Aligned_cols=31  Identities=16%  Similarity=0.236  Sum_probs=26.2  Template_Neff=6.500
+
+Q T0245s2          89 DVNQWNEIRDTLWSLGARYGYDTTIVLAWTV  119 (134)
+Q Consensus        89 d~~~w~eirdtlwslg~r~~y~~~~vl~~~~  119 (134)
+                      .-..|++|+..|...|++|+.-+|..|-.+.
+T Consensus        23 kRr~f~~v~k~Lr~~~i~~~~~yPa~L~v~~   53 (88)
+T 3SOO_B           23 ISKQWSNVFNILRENDFEPKFLCEVKLAFKC   53 (88)
+T ss_dssp             BCHHHHHHHHHHHHTTCCCEEEEEEEEEEEC
+T ss_pred             HHHHHHHHHHHHHHCCCCCcccCceEEEEEE
+Confidence            3467999999999999999988888887664
+
+
+No 5
+>5MRC_U 54S ribosomal protein RML2, mitochondrial; yeast, mitochondrial, ribosome, saccharomyces cerevisiae; HET: GDP, MG; 3.25A {Saccharomyces cerevisiae}
+Probab=26.56  E-value=56  Score=23.28  Aligned_cols=38  Identities=26%  Similarity=0.195  Sum_probs=27.7  Template_Neff=6.300
+
+Q T0245s2          74 LCRSADGFPFEPAENDVNQWNEIRDTLWSLGARYGYDTTIVLAWTVADVG  123 (134)
+Q Consensus        74 l~~s~~g~p~epa~~d~~~w~eirdtlwslg~r~~y~~~~vl~~~~a~~g  123 (134)
+                      +.||..|.|.           ++++||.+||++-.+...+ ++-|.+.+|
+T Consensus         7 riRs~ig~~~-----------~~r~tL~~LgL~k~~~~v~-~~~tp~~~G   44 (82)
+T 5MRC_U            7 LSRSLIGVPH-----------TTKSIVKSLGLGKRGSIVY-KKVNPAIAG   44 (82)
+T ss_dssp             ECSCSSSCCH-----------HHHHHHHHHTCCSTTCEEE-EECCHHHHH
+T ss_pred             EecCCCCCCH-----------HHHHHHHHCCCCCCCCeEE-eCCCHHHHH
+Confidence            3457777664           5799999999999887554 566666665
+
+
+No 6
+>2GAG_D heterotetrameric sarcosine oxidase alpha-subunit, heterotetrameric; Sarcosine oxidase, Flavoenzyme, Electron transfer; HET: NAD, FOA, FMN, FAD; 1.85A {Stenotrophomonas maltophilia}
+Probab=23.20  E-value=71  Score=24.68  Aligned_cols=28  Identities=36%  Similarity=0.721  Sum_probs=18.7  Template_Neff=4.400
+
+Q T0245s2          57 HGEFQYGGEKTRIRLARLCRSADGFPFEPAENDVNQWNE   95 (134)
+Q Consensus        57 ~ge~~~~g~~~~ir~arl~~s~~g~p~epa~~d~~~w~e   95 (134)
+                      +-||.|+|+....|           |..|+..++..|.+
+T Consensus        14 ~~EF~ygGea~~~r-----------P~~~~~~sd~~W~d   41 (99)
+T 2GAG_D           14 ENEFKYGGEAHVAY-----------PADPHALSDKQWSR   41 (99)
+T ss_dssp             GGGSEEEEESSCCC-----------CSCGGGSCHHHHHH
+T ss_pred             hhhcccccccCCCC-----------CCChhhCCHHHHHH
+Confidence            56999999865322           44456666777765
+
+
+No 7
+>1BXY_A PROTEIN (RIBOSOMAL PROTEIN L30); RIBOSOMAL PROTEIN, CONFORMATIONAL CHANGES, RIBOSOME; 1.9A {Thermus thermophilus} SCOP: d.59.1.1
+Probab=22.92  E-value=73  Score=20.98  Aligned_cols=29  Identities=28%  Similarity=0.177  Sum_probs=23.0  Template_Neff=7.000
+
+Q T0245s2          95 EIRDTLWSLGARYGYDTTIVLAWTVADVGI  124 (134)
+Q Consensus        95 eirdtlwslg~r~~y~~~~vl~~~~a~~g~  124 (134)
+                      ++++||-.||++-.|+..+ ++-|.+.+|.
+T Consensus        18 ~~~~tl~~LgL~k~~~~v~-~~~tp~~~gm   46 (60)
+T 1BXY_A           18 DQKAALKALGLRRLQQERV-LEDTPAIRGN   46 (60)
+T ss_dssp             HHHHHHHHHTCCSTTCEEE-EECCHHHHHH
+T ss_pred             HHHHHHHHcCCCCCCceEE-ECCCHHHHHH
+Confidence            5799999999999887765 6667777663
+
+
+No 8
+>4V4I_X Ribosome; RIBOSOME, FUNCTIONAL COMPLEX, TRNA, E; HET: UR3, 5MU, 2MG, 7MG, 5MC, MIA, H2U, PSU, 4SU, M2G, 4OC, MA6; 3.71A {Thermus thermophilus}
+Probab=22.92  E-value=73  Score=20.98  Aligned_cols=29  Identities=28%  Similarity=0.177  Sum_probs=23.0  Template_Neff=7.000
+
+Q T0245s2          95 EIRDTLWSLGARYGYDTTIVLAWTVADVGI  124 (134)
+Q Consensus        95 eirdtlwslg~r~~y~~~~vl~~~~a~~g~  124 (134)
+                      ++++||-.||++-.|+..+ ++-|.+.+|.
+T Consensus        18 ~~~~tl~~LgL~k~~~~v~-~~~tp~~~gm   46 (60)
+T 4V4I_X           18 DQKAALKALGLRRLQQERV-LEDTPAIRGN   46 (60)
+T ss_pred             HHHHHHHHcCCCCCCceEE-ECCCHHHHHH
+Confidence            5799999999999887765 6667777663
+
+
+No 9
+>4WZD_H5 30S ribosomal protein S2, 30S; ribosome, translation, mismatch; HET: OMG, 5MU, MIA, QUO, PSU, 4SU, MG; 3.1A {Thermus thermophilus HB8}
+Probab=22.92  E-value=73  Score=20.98  Aligned_cols=29  Identities=28%  Similarity=0.177  Sum_probs=23.0  Template_Neff=7.000
+
+Q T0245s2          95 EIRDTLWSLGARYGYDTTIVLAWTVADVGI  124 (134)
+Q Consensus        95 eirdtlwslg~r~~y~~~~vl~~~~a~~g~  124 (134)
+                      ++++||-.||++-.|+..+ ++-|.+.+|.
+T Consensus        18 ~~~~tl~~LgL~k~~~~v~-~~~tp~~~gm   46 (60)
+T 4WZD_H5          18 DQKAALKALGLRRLQQERV-LEDTPAIRGN   46 (60)
+T ss_pred             HHHHHHHHcCCCCCCceEE-ECCCHHHHHH
+Confidence            5799999999999887765 6667777663
+
+
+No 10
+>4FQE_A Oligogalacturonate-specific porin kdgM; beta barrel, porin, outer membrane; HET: C8E, OCT; 1.93A {Dickeya dadantii}
+Probab=22.14  E-value=77  Score=25.25  Aligned_cols=15  Identities=20%  Similarity=-0.004  Sum_probs=12.4  Template_Neff=7.900
+
+Q T0245s2          99 TLWSLGARYGYDTTI  113 (134)
+Q Consensus        99 tlwslg~r~~y~~~~  113 (134)
+                      --|++++||+|+..-
+T Consensus       103 ~~l~~~~RYRy~~~~  117 (222)
+T 4FQE_A          103 DDLSVALRYRPYFKR  117 (222)
+T ss_dssp             SSEEEEEEEEEEEEC
+T ss_pred             CCeEEEEEEEEEEEe
+Confidence            468999999999763
+
+
+No 11
+>4PR7_A Oligogalacturonate-specific porin KdgM; beta barrel, oligogalacturonate specificity, transport; HET: OCT, C8E, ADA; 2.1A {Dickeya dadantii}
+Probab=22.14  E-value=77  Score=25.25  Aligned_cols=15  Identities=20%  Similarity=-0.004  Sum_probs=12.4  Template_Neff=7.900
+
+Q T0245s2          99 TLWSLGARYGYDTTI  113 (134)
+Q Consensus        99 tlwslg~r~~y~~~~  113 (134)
+                      --|++++||+|+..-
+T Consensus       103 ~~l~~~~RYRy~~~~  117 (222)
+T 4PR7_A          103 DDLSVALRYRPYFKR  117 (222)
+T ss_dssp             SSEEEEEEEEEEEEC
+T ss_pred             CCeEEEEEEEEEEEe
+Confidence            468999999999763
+
+
+No 12
+>6JLU_q PsbA, PsbB, PsbC, PsbD, PsbE; PSII-FCP supercomplex, PLANT PROTEIN; HET: HEM, SQD, LHG, DD6, PHO, KC2, CLA, A86, KC1, LMG, OEX, DGD, PL9, BCR; 3.02A {Chaetoceros gracilis}
+Probab=22.02  E-value=78  Score=26.64  Aligned_cols=57  Identities=14%  Similarity=0.135  Sum_probs=36.8  Template_Neff=5.700
+
+Q T0245s2          56 YHGEFQYGGEKTRI---RLARLCRSADGFPFEPAENDVNQWNEIRDTLWSLGARYGYDTT  112 (134)
+Q Consensus        56 ~~ge~~~~g~~~~i---r~arl~~s~~g~p~epa~~d~~~w~eirdtlwslg~r~~y~~~  112 (134)
+                      ..+++.+.+....-   -..|+..+.+.+++-+..-+...|++||.-|--=-.-.+||+.
+T Consensus       100 ~~~~~~~~~~~~~~i~~~~~ri~~~a~rL~eL~~lI~~k~W~~Vr~~Lrg~~g~Lr~Dm~  159 (211)
+T 6JLU_q          100 EGEKSLYKPDSAEYLARKKAVLAETKNRLQKIPGYVDKKEWFNVKDELTRYMYETRGAVR  159 (211)
+T ss_pred             CCCCccCCCCCHHHHHHHHHHHHHHHHHHHhhHHhhccccHHHHHHHHHHhHHHHHHHHH
+Confidence            34455555533221   1357778889999989999999999999887332233344443
+
+
+No 13
+>2QJF_B Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthetase 1; ATP-sulfurylase, PAPS-synthetase, monomer-dimer equillibrium, transferase; HET: ADX; 2.2A {Homo sapiens}
+Probab=21.95  E-value=78  Score=27.59  Aligned_cols=51  Identities=12%  Similarity=0.258  Sum_probs=33.3  Template_Neff=7.800
+
+Q T0245s2          19 RPPVLIDPGEFE--------PNAFRATEATPITMVEINDTLQLYL----------------------YHGEFQYGGEKTR   68 (134)
+Q Consensus        19 r~PIlmd~~E~~--------p~~l~~TeaTPI~~~~ind~l~~~~----------------------~~ge~~~~g~~~~   68 (134)
+                      .-||.++.++..        --+|. .++.|++++++.++...-.                      ..|+|..+|+-+.
+T Consensus        86 p~Pi~l~v~~~~~~~~~~g~~v~L~-~~g~~~a~l~v~e~~~~d~~~~~~~~~gt~d~~hp~v~~~~~~g~~~v~G~v~~  164 (405)
+T 2QJF_B           86 SVPIVLTATHEDKERLDGCTAFALM-YEGRRVAILRNPEFFEHRKEERCARQWGTTCKNHPYIKMVMEQGDWLIGGDLQV  164 (405)
+T ss_pred             cccEEEeCCHHHHHhcCCCCeEEec-CCCceEEEEEcHhhccCCcHHHHHHHhCCCCCCCcchheecccCCEEEEeEEEE
+Confidence            346666544332        23344 5999999999999876532                      3378888887766
+
+
+Q T0245s2          69 IR   70 (134)
+Q Consensus        69 ir   70 (134)
+                      +.
+T Consensus       165 ~~  166 (405)
+T 2QJF_B          165 LD  166 (405)
+T ss_pred             cc
+Confidence            54
+
+
+No 14
+>4IOA_W 50S ribosomal subunit; RIBOSOME-RIBOSOME INHIBITOR complex; HET: 1F3, MG; 3.2A {Deinococcus radiodurans}
+Probab=20.85  E-value=85  Score=20.32  Aligned_cols=28  Identities=29%  Similarity=0.115  Sum_probs=20.5  Template_Neff=7.000
+
+Q T0245s2          95 EIRDTLWSLGARYGYDTTIVLAWTVADVG  123 (134)
+Q Consensus        95 eirdtlwslg~r~~y~~~~vl~~~~a~~g  123 (134)
+                      ++++||..||++-.+...+ ++-|-+.+|
+T Consensus        15 ~~~~tl~~LgL~k~~~~v~-~~~~p~~~g   42 (55)
+T 4IOA_W           15 NQVKTVQALGLRKIGDSRE-VSDTPAVRG   42 (55)
+T ss_pred             HHHHHHHHcCCCcCCCeEE-eCCCHHHHH
+Confidence            5789999999998777655 455555544
+
+
+No 15
+>5DM6_W 50S ribosomal protein L1, 50S; protein synthesis, peptidyltransferase, ribozyme, ribonucleoprotein; HET: MG; 2.9A {Deinococcus radiodurans}
+Probab=20.85  E-value=85  Score=20.32  Aligned_cols=28  Identities=29%  Similarity=0.115  Sum_probs=20.5  Template_Neff=7.000
+
+Q T0245s2          95 EIRDTLWSLGARYGYDTTIVLAWTVADVG  123 (134)
+Q Consensus        95 eirdtlwslg~r~~y~~~~vl~~~~a~~g  123 (134)
+                      ++++||..||++-.+...+ ++-|-+.+|
+T Consensus        15 ~~~~tl~~LgL~k~~~~v~-~~~~p~~~g   42 (55)
+T 5DM6_W           15 NQVKTVQALGLRKIGDSRE-VSDTPAVRG   42 (55)
+T ss_pred             HHHHHHHHcCCCcCCCeEE-eCCCHHHHH
+Confidence            5789999999998777655 455555544
+
+
+No 16
+>5JVG_W 50S ribosomal protein L2, 50S; Deinococcus radiodurans, avilamycin, degradable antibiotics; HET: MPD, 6NO, MG, SPD; 3.428A {Deinococcus radiodurans R1}
+Probab=20.85  E-value=85  Score=20.32  Aligned_cols=28  Identities=29%  Similarity=0.115  Sum_probs=20.5  Template_Neff=7.000
+
+Q T0245s2          95 EIRDTLWSLGARYGYDTTIVLAWTVADVG  123 (134)
+Q Consensus        95 eirdtlwslg~r~~y~~~~vl~~~~a~~g  123 (134)
+                      ++++||..||++-.+...+ ++-|-+.+|
+T Consensus        15 ~~~~tl~~LgL~k~~~~v~-~~~~p~~~g   42 (55)
+T 5JVG_W           15 NQVKTVQALGLRKIGDSRE-VSDTPAVRG   42 (55)
+T ss_pred             HHHHHHHHcCCCcCCCeEE-eCCCHHHHH
+Confidence            5789999999998777655 455555544
+
+
+No 17
+>1X6V_A Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthetase 1; transferase, ATP sulfurylase, APS kinase; HET: ADP; 1.75A {Homo sapiens} SCOP: b.122.1.3, c.26.1.5, c.37.1.4
+Probab=20.24  E-value=90  Score=28.18  Aligned_cols=51  Identities=12%  Similarity=0.258  Sum_probs=34.0  Template_Neff=8.700
+
+Q T0245s2          19 RPPVLIDPGEFE--------PNAFRATEATPITMVEINDTLQLYL----------------------YHGEFQYGGEKTR   68 (134)
+Q Consensus        19 r~PIlmd~~E~~--------p~~l~~TeaTPI~~~~ind~l~~~~----------------------~~ge~~~~g~~~~   68 (134)
+                      .-||.++.++..        --+|. .++.|++++++.++...-.                      ..|+|..+|+-+.
+T Consensus       305 p~Pi~l~~~~~~~~~~~~~~~i~L~-~~g~~~a~l~v~~~~~~d~~~~~~~~~gt~d~~hp~v~~~~~~~~~~v~G~~~~  383 (630)
+T 1X6V_A          305 SVPIVLTATHEDKERLDGCTAFALM-YEGRRVAILRNPEFFEHRKEERCARQWGTTCKNHPYIKMVMEQGDWLIGGDLQV  383 (630)
+T ss_dssp             CSCCCEEECHHHHHHHTTCSEEEEE-ETTEEEEEEEEEEEEECCHHHHHHHHHSCCCTTSHHHHHHHHSCSEEEEEEEEE
+T ss_pred             cccEEEeCCHHHHHhcCCCceEEee-eCCEEEEEEeCHHheeccHHHHHHHHHCCCCCCChhHhehhccCCEEEEEEEEE
+Confidence            356777655442        22444 5999999999999876532                      3378888887666
+
+
+Q T0245s2          69 IR   70 (134)
+Q Consensus        69 ir   70 (134)
+                      +.
+T Consensus       384 ~~  385 (630)
+T 1X6V_A          384 LD  385 (630)
+T ss_dssp             CS
+T ss_pred             ec
+Confidence            54
+
+
+No 18
+>1XJQ_B Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthetase 1; TRANSFERASE, ATP SULFURYLASE, APS KINASE; HET: ADP; 2.06A {Homo sapiens} SCOP: b.122.1.3, c.26.1.5, c.37.1.4
+Probab=20.24  E-value=90  Score=28.18  Aligned_cols=51  Identities=12%  Similarity=0.258  Sum_probs=34.0  Template_Neff=8.700
+
+Q T0245s2          19 RPPVLIDPGEFE--------PNAFRATEATPITMVEINDTLQLYL----------------------YHGEFQYGGEKTR   68 (134)
+Q Consensus        19 r~PIlmd~~E~~--------p~~l~~TeaTPI~~~~ind~l~~~~----------------------~~ge~~~~g~~~~   68 (134)
+                      .-||.++.++..        --+|. .++.|++++++.++...-.                      ..|+|..+|+-+.
+T Consensus       305 p~Pi~l~~~~~~~~~~~~~~~i~L~-~~g~~~a~l~v~~~~~~d~~~~~~~~~gt~d~~hp~v~~~~~~~~~~v~G~~~~  383 (630)
+T 1XJQ_B          305 SVPIVLTATHEDKERLDGCTAFALM-YEGRRVAILRNPEFFEHRKEERCARQWGTTCKNHPYIKMVMEQGDWLIGGDLQV  383 (630)
+T ss_dssp             CSCCCEEECHHHHHHHTTCSEEEEE-ETTEEEEEEEEEEEEECCHHHHHHHHHSCCCTTSHHHHHHHTSCSEEEEEEEEE
+T ss_pred             cccEEEeCCHHHHHhcCCCceEEee-eCCEEEEEEeCHHheeccHHHHHHHHHCCCCCCChhHhehhccCCEEEEEEEEE
+Confidence            356777655442        22444 5999999999999876532                      3378888887666
+
+
+Q T0245s2          69 IR   70 (134)
+Q Consensus        69 ir   70 (134)
+                      +.
+T Consensus       384 ~~  385 (630)
+T 1XJQ_B          384 LD  385 (630)
+T ss_dssp             CS
+T ss_pred             ec
+Confidence            54
+
+

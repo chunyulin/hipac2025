@@ -1,0 +1,35 @@
+#!/bin/bash
+#SBATCH -J D1273 -p nchc
+#SBATCH --nodes=1 --ntasks-per-node=1 --cpus-per-task=40
+#SBATCH --gres=gpu:4
+
+sleep 0
+ml purge
+ml nvhpc-hpcx-cuda12/24.5
+hostname
+nvidia-smi
+source /beegfs/shared/lincy/ENV/af2/bin/activate
+
+DATA_PATH=/beegfs/data/alphafold2_data
+
+uniref90_path="$DATA_PATH/uniref90/uniref90.fasta"
+mgnify_path="$DATA_PATH/mgnify/mgy_clusters_2022_05.fa"
+template_mmcif_dir="$DATA_PATH/pdb_mmcif/mmcif_files"
+obsolete_pdbs_path="$DATA_PATH/pdb_mmcif/obsolete.dat"
+small_bfd_path="$DATA_PATH/small_bfd/bfd-first_non_consensus_sequences.fasta"
+pdb70_path="$DATA_PATH/pdb70/pdb70"
+
+MONOMER_DB="--data_dir=$DATA_PATH \
+            --uniref90_database_path=$uniref90_path \
+            --mgnify_database_path=$mgnify_path  \
+            --template_mmcif_dir=$template_mmcif_dir \
+            --obsolete_pdbs_path=$obsolete_pdbs_path \
+            --small_bfd_database_path=$small_bfd_path \
+            --pdb70_database_path=$pdb70_path"
+
+SRUN="srun"
+
+${SRUN}  python ../../run_alphafold.py --fasta_paths=.././data/fasta/D1273.fasta --output_dir=./ --db_preset=reduced_dbs  \
+         --models_to_relax=none --use_gpu_relax=True --use_precomputed_msas --max_template_date=2023-01-01  \
+         --model_preset=monomer_ptm ${MONOMER_DB}
+echo "Done in ${SECONDS} secs ..."
